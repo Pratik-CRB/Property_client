@@ -1,0 +1,47 @@
+.table{
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    border-collapse: collapse;
+    margin: 25px 0 0 20px;
+    font-size: 0.9em;
+    min-width: 400px;
+    width: 80%;
+    border: 2px solid #dddddd;
+    border-radius: 20px;
+    display: flex;
+    
+    flex-direction: column;
+}
+.table-head tr{
+    
+    color: #284E91;
+    text-align: left;
+    padding: auto;
+    margin-left: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+}
+table th, table td{
+    padding: 12px 15px;
+    margin-left: 50px;
+}
+.table-body tr{
+    text-align: center;
+    font-weight: 100;
+   color: gray;
+    border-bottom: 1px solid #dddddd;
+}
+tbody td img {
+    height: 50px;
+    width: 50px;
+}
+#viewPropertyDetails{
+    margin-right: 15px;
+}
+#Status{
+    background-color: #F5FAF5;
+    color: #416899;
+    border-radius: 20%;
+}

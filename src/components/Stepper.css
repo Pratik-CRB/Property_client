@@ -1,0 +1,15 @@
+.Stepper{
+    display: flex;
+    width: 60vw;
+    height: 5vh;
+    background-color: aquamarine;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    margin: 20px;
+}
+.Stepper p {
+    display: inline;
+    margin-right: 5px;
+}
