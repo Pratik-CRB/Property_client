@@ -3,7 +3,6 @@ import { BasicInfo } from "./InputForm/BasicInfo";
 import { PropertyDetails } from "./InputForm/PropertyDetails";
 import { LocationInfo } from "./InputForm/LocationInfo";
 import { GeneralInfo } from "./InputForm/GeneralInfo";
-import { useNavigate } from "react-router-dom";
 import { Header } from "./Header";
 import { SideMenu } from "./SideMenu";
 import "./AddProperty.css";
@@ -14,7 +13,6 @@ function AddProperty({ onSubmit, submitBtn }) {
   let [btnText, setBtnText] = useState("Previous");
   let [nextBtn, setNextBtn] = useState("Save & Conitnue");
   const [form, setForm] = useState({});
-  let navigate = useNavigate();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -37,8 +35,8 @@ function AddProperty({ onSubmit, submitBtn }) {
       .then((response) => {
         if (response.message == "success"){
           alert(response.message);
-          window.location.reload();
-          //navigate('/Body');
+          //window.location.reload();
+          navigate('/Body');
         }else{
           alert(response.message);
         }
