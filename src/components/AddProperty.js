@@ -6,6 +6,7 @@ import { GeneralInfo } from "./InputForm/GeneralInfo";
 import { Header } from "./Header";
 import { SideMenu } from "./SideMenu";
 import "./AddProperty.css";
+import { useNavigate } from "react-router-dom";
 
 function AddProperty({ onSubmit, submitBtn }) {
   const steps = ["BasicInfo", "PropertyDetails", "LocationInfo", "GeneralInfo"];
@@ -17,7 +18,8 @@ function AddProperty({ onSubmit, submitBtn }) {
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-
+  const navigate = useNavigate();
+  
   const handleSubmit = (e) => {
     console.log(form);
     submitData(form);
